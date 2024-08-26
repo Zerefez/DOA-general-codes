@@ -1,1 +1,1 @@
-Clone The shit and just open BRRRR.sln
+Clone The shit and just open BRRR.sln
