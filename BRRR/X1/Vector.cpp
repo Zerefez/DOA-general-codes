@@ -14,8 +14,9 @@ int main() {
     cout << "Enter the number of random integers to check (N): ";
     cin >> N;
 
-    // Generate M random integers in the range [0, 9] and store them in a vector
+    // Generate M random integers in the range [0, 99] and store them in a vector
     vector<int> vecM;
+    
     cout << "Vector M: ";
     for (int i = 0; i < M; ++i) {
         int randomNum = rand() % 100;
@@ -32,9 +33,10 @@ int main() {
         cout << randomNum << " ";
 
         // Use an iterator to check if the random number is in vecM
-        if (find(vecM.begin(), vecM.end(), randomNum) != vecM.end()) {
+        vector<int>::iterator it = find(vecM.begin(), vecM.end(), randomNum);
+          if(it != vecM.end()) {
             ++count;
-        }
+          }
     }
     cout << endl;
 
