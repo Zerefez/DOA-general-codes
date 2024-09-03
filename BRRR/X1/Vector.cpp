@@ -39,7 +39,7 @@ int main() {
         for (int j = 0; j < vecM.size(); ++j) {
             if (vecM[j] == randomNumN) {
                 matchedNumbers.push_back(randomNumN);
-                break;  // No need to continue checking once a match is found
+                break;  
             }
         }
     }
