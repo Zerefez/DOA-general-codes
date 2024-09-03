@@ -1,13 +1,12 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
-
+#include <cstdlib>
 
 using namespace std;
 
 int main() {
     // Initialize random seed
-    srand((0));
+    srand(0);
 
     int M, N;
     cout << "Enter the number of elements in the first vector (M): ";
@@ -17,30 +16,31 @@ int main() {
 
     cout << endl;
 
-    // Generate M random integers in the range [0, 99] and store them in a vector
     vector<int> vecM;
-
-    cout << "Vector M: ";
-    for (int i = 0; i < M; ++i) {
-        int randomNum = rand() % 100;
-        vecM.push_back(randomNum);
-        cout << randomNum << " ";
-    }
-    cout << endl<<endl;
-
-    // Generate N random integers in the same range and store them in a vector
     vector<int> vecN;
     vector<int> matchedNumbers;
+
+	// Generate random numbers for vectors M and N
+    cout << "Vector M: ";
+    for (int i = 0; i < M; ++i) {
+        int randomNumM = rand() % 100;
+        vecM.push_back(randomNumM);
+        cout << randomNumM << " ";
+    }
+    cout << endl;
+
     cout << "Vector N: ";
     for (int i = 0; i < N; ++i) {
-        int randomNum = rand() % 100;
-        vecN.push_back(randomNum);
-        cout << randomNum << " ";
+        int randomNumN = rand() % 100;
+        vecN.push_back(randomNumN);
+        cout << randomNumN << " ";
 
-        // Check if the random number is in vecM and store matches
-        vector<int>::iterator it = find(vecM.begin(), vecM.end(), randomNum);
-         if(it != vecM.end()) {
-            matchedNumbers.push_back(randomNum);
+        // Manually check if randomNumN is in vecM
+        for (int j = 0; j < vecM.size(); ++j) {
+            if (vecM[j] == randomNumN) {
+                matchedNumbers.push_back(randomNumN);
+                break;  // No need to continue checking once a match is found
+            }
         }
     }
     cout << endl << endl;
