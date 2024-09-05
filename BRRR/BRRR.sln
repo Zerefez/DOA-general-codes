@@ -35,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "template 1", "template 1\template 1.vcxproj", "{7A2287F3-6BC5-44D4-B67F-FB7E8ACD76D5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week 1-2 Exercises", "Week 1-2 Exercises", "{08803341-57AA-4102-85C4-9B4B04594C31}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week1-2 Exercises", "Week1-2 Exercises", "{08803341-57AA-4102-85C4-9B4B04594C31}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X1", "X1\X1.vcxproj", "{AB385019-4296-4CF2-9B22-E17E8628D66B}"
 EndProject
