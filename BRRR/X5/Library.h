@@ -1,19 +1,10 @@
 #pragma once
 
 #include <vector>
+#include "Book.h"
 
 using namespace std;
 
-
-class Book
-{
-public:
-		int ID;
-		int category;
-		bool borrowed;
-
-		Book(int i, int c) : ID(i), category(c), borrowed(false) {}
-};
 
 class Library
 {
