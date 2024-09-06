@@ -4,6 +4,17 @@
 
 using namespace std;
 
+
+class Book
+{
+public:
+		int ID;
+		int category;
+		bool borrowed;
+
+		Book(int i, int c) : ID(i), category(c), borrowed(false) {}
+};
+
 class Library
 {
 public:
@@ -14,16 +25,8 @@ public:
 	bool borrowBook(int);
 	void displayAvailableBooks();
 	int countBooksInCategory(int);
+
 private:
-
-	struct Book {
-		int ID;
-		int category;
-		bool borrowed;
-
-		Book(int i, int c) : ID(i), category(c), borrowed(false) {}
-	};
-
 	vector<Book> books ;
 
 	void issueBalanceWarning(int);
