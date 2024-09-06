@@ -7,6 +7,7 @@ using namespace std;
 void Library::addBook(int id, int cat)
 {
 	books.emplace_back(Book(id, cat));
+	cout << "Adding " << "Book ID: " << id << " to Category: " << cat << endl;
 	issueBalanceWarning(cat);
 }
 
@@ -109,7 +110,7 @@ void Library::issueBalanceWarning(int cat)
 	// Check each category and issue warnings if necessary
 	for (int i = 0; i < 16; ++i) {
 		if (count[i] >= 2 * average) {
-			std::cout << "Warning: Category " << i << " has " << count[i] << " books, which is above average." << std::endl;
+			std::cout << "Warning: Category " << i << " has " << count[i] << " books, which is above average book per categori." << std::endl;
 		}
 	}
 }
