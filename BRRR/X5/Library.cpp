@@ -100,10 +100,11 @@ void Library::issueBalanceWarning(int cat)
 	// Calculate the average number of books per category
 	double average = (totalCategories > 0) ? static_cast<double>(totalBooks) / totalCategories : 0;
 
-	// Debugging outputs
+	/* Debugging outputs
 	std::cout << "Total Categories with Books: " << totalCategories << std::endl;
 	std::cout << "Total Books: " << totalBooks << std::endl;
 	std::cout << "Average Books per Category: " << std::fixed  << average << std::endl;
+	*/
 
 	// Check each category and issue warnings if necessary
 	for (int i = 0; i < 16; ++i) {
