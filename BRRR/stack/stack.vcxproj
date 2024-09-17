@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\list_\double_list.h" />
     <ClInclude Include="stack_class.h" />
   </ItemGroup>
   <ItemGroup>

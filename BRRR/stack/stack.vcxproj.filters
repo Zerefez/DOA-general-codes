@@ -18,6 +18,9 @@
     <ClInclude Include="stack_class.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\list_\double_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test_stack_class.cpp">

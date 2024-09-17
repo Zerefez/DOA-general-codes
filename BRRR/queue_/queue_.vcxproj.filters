@@ -29,5 +29,8 @@
     <ClInclude Include="queue_class.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\list_\double_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
