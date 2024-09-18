@@ -35,14 +35,16 @@ public:
         s2.clear();
     }
 
-    void push(const int x)
+    void enqueue(const int x)
     {
         cout << "Queue push: " << x << endl;
         s1.push(x);
+
+
     }
 
 
-    int pop()
+    int dequeue()
     {
         if (s2.empty()) {
             while (!s1.empty()) {
