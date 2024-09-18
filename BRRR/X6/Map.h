@@ -56,6 +56,20 @@ inline void Map<Key, Value>::remove(const Key& key)
 	{
 		throw runtime_error("Key not found");
 	}
+
+	// Another way to remove the key and value
+	/*
+	* for (size_t i = 0; i < keys.size(); ++i)
+	{
+		if (keys[i] == key) // If key is found
+		{
+			keys.erase(keys.begin() + i); // Remove the key
+			values.erase(values.begin() + i); // Remove the corresponding value
+			return;
+		}
+	}
+	throw runtime_error("Key not found");
+	*/
 }
 
 template<typename Key, typename Value>
@@ -73,6 +87,22 @@ inline Value& Map<Key, Value>::operator[](const Key& key)
 		values.push_back(Value()); // add a default value
 		return values[values.size() - 1]; // return the default value
 	}
+
+	// Another way to implement the operator[]
+	/*
+	* for (size_t i = 0; i < keys.size(); ++i)
+	{
+		if (keys[i] == key) // If key is found
+		{
+			return values[i]; // Return the corresponding value
+		}
+	}
+
+	// If key is not found, add the key and a default value
+	keys.push_back(key);             // Add the new key
+	values.push_back(Value());       // Add a default-constructed value
+	return values.back();
+	*/
 }
 
 template<typename Key, typename Value>
@@ -80,6 +110,18 @@ inline bool Map<Key, Value>::contains(const Key& key)
 {
 	auto it = find(keys.begin(), keys.end(), key);
 	return it != keys.end();
+
+	// Another way to implement the contains function
+	/*
+	for (const auto& k : keys) // Iterate through the keys
+	{
+		if (k == key) // If the key is found
+		{
+			return true; // Key exists
+		}
+	}
+	return false; // Key not found
+	*/
 }
 
 template<typename Key, typename Value>
