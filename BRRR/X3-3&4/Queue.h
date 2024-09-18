@@ -6,8 +6,8 @@ template <typename Object>
 class Queue
 {
 private:
-    Stack<int> s1;
-    Stack<int> s2;
+    Stack<Object> s1;
+    Stack<Object> s2;
 
 public:
     Queue()
@@ -35,16 +35,14 @@ public:
         s2.clear();
     }
 
-    void enqueue(const int x)
+    void enqueue(const Object x)
     {
         cout << "Queue push: " << x << endl;
         s1.push(x);
-
-
     }
 
 
-    int dequeue()
+    Object dequeue()
     {
         if (s2.empty()) {
             while (!s1.empty()) {
@@ -60,7 +58,7 @@ public:
         };
     }
 
-    int front()
+    Object front()
     {
         if (s2.empty()) {
             while (!s1.empty()) {
@@ -76,7 +74,7 @@ public:
         }
     }
 
-    int back()
+    Object back()
     {
         if (!s1.empty()) {
             return s1.top();

@@ -119,6 +119,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example_Dictionary", "Examp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example_dictionary", "example_dictionary\example_dictionary.vcxproj", "{9F5B3512-98C5-4591-94A5-FBD556A1A253}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X4-3&4", "X4-3&4\X4-3&4.vcxproj", "{09845080-B3AE-43D9-B816-7024C33B46FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -375,6 +377,14 @@ Global
 		{9F5B3512-98C5-4591-94A5-FBD556A1A253}.Release|x64.Build.0 = Release|x64
 		{9F5B3512-98C5-4591-94A5-FBD556A1A253}.Release|x86.ActiveCfg = Release|Win32
 		{9F5B3512-98C5-4591-94A5-FBD556A1A253}.Release|x86.Build.0 = Release|Win32
+		{09845080-B3AE-43D9-B816-7024C33B46FD}.Debug|x64.ActiveCfg = Debug|x64
+		{09845080-B3AE-43D9-B816-7024C33B46FD}.Debug|x64.Build.0 = Debug|x64
+		{09845080-B3AE-43D9-B816-7024C33B46FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{09845080-B3AE-43D9-B816-7024C33B46FD}.Debug|x86.Build.0 = Debug|Win32
+		{09845080-B3AE-43D9-B816-7024C33B46FD}.Release|x64.ActiveCfg = Release|x64
+		{09845080-B3AE-43D9-B816-7024C33B46FD}.Release|x64.Build.0 = Release|x64
+		{09845080-B3AE-43D9-B816-7024C33B46FD}.Release|x86.ActiveCfg = Release|Win32
+		{09845080-B3AE-43D9-B816-7024C33B46FD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -431,6 +441,7 @@ Global
 		{9B908E8E-8A54-4D62-98F1-79D5D0EE4B82} = {C0ED11B1-3746-48AC-9691-64770AC51810}
 		{51666D87-0BC6-4961-B986-3371B6896EED} = {0CBEC1AA-5CF6-47E5-BD66-4A3B1BEF6498}
 		{9F5B3512-98C5-4591-94A5-FBD556A1A253} = {51666D87-0BC6-4961-B986-3371B6896EED}
+		{09845080-B3AE-43D9-B816-7024C33B46FD} = {D4C4EF4E-E97A-4586-8C9D-A345ABE6D8FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B7BE24D-EEDD-43E3-8CE5-9B90352E3321}
