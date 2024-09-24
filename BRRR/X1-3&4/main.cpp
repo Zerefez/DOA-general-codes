@@ -53,6 +53,8 @@ int main() {
 	list.print();
 	cout << endl;
 
+	list.clear();
+
 	list.contains(3);
 	cout << endl;
 
