@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{09b903c7-a3fd-4b8a-b6d4-fc2df3ff7e8c}</ProjectGuid>
-    <RootNamespace>X856</RootNamespace>
+    <ProjectGuid>{66741e34-f534-4f06-9132-e21efd6f4a2f}</ProjectGuid>
+    <RootNamespace>priorityqueue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,13 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="intro_sort.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="compare.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="introSort.cpp" />
+    <ClCompile Include="test_priority_queue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

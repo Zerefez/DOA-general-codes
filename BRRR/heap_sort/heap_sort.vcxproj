@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{09b903c7-a3fd-4b8a-b6d4-fc2df3ff7e8c}</ProjectGuid>
-    <RootNamespace>X856</RootNamespace>
+    <ProjectGuid>{f48c9194-4d36-4701-8dda-fc9e040ee4a5}</ProjectGuid>
+    <RootNamespace>heapsort</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,13 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="intro_sort.h" />
+    <ClInclude Include="heap_sort.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="compare.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="introSort.cpp" />
+    <ClCompile Include="test_heap_sort.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
